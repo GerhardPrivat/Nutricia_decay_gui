@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\spyderlib\spyder.py", line 2009, in main
+    mainwindow = run_spyder(app, options)
+  File "C:\Python27\lib\site-packages\spyderlib\spyder.py", line 1930, in run_spyder
+    main.post_visible_setup()
+  File "C:\Python27\lib\site-packages\spyderlib\spyder.py", line 956, in post_visible_setup
+    self.extconsole.open_interpreter_at_startup()
+  File "C:\Python27\lib\site-packages\spyderlib\plugins\externalconsole.py", line 1092, in open_interpreter_at_startup
+    self.open_interpreter()
+  File "C:\Python27\lib\site-packages\spyderlib\plugins\externalconsole.py", line 1101, in open_interpreter
+    interact=True, debug=False, python=True)
+  File "C:\Python27\lib\site-packages\spyderlib\plugins\externalconsole.py", line 739, in start
+    show_elapsed_time=show_elapsed_time)
+  File "C:\Python27\lib\site-packages\spyderlib\widgets\externalshell\pythonshell.py", line 207, in __init__
+    show_elapsed_time=show_elapsed_time)
+  File "C:\Python27\lib\site-packages\spyderlib\widgets\externalshell\baseshell.py", line 73, in __init__
+    self.shell = self.SHELL_CLASS(parent, get_conf_path(history_filename))
+  File "C:\Python27\lib\site-packages\spyderlib\widgets\externalshell\pythonshell.py", line 39, in __init__
+    debug, profile)
+  File "C:\Python27\lib\site-packages\spyderlib\widgets\shell.py", line 690, in __init__
+    ShellBaseWidget.__init__(self, parent, history_filename, debug, profile)
+  File "C:\Python27\lib\site-packages\spyderlib\widgets\shell.py", line 61, in __init__
+    self.history = self.load_history()
+  File "C:\Python27\lib\site-packages\spyderlib\widgets\shell.py", line 488, in load_history
+    if rawhistory[1] != self.INITHISTORY[1]:
+IndexError: list index out of range
