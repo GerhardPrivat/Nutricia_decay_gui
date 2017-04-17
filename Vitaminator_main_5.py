@@ -1,5 +1,5 @@
-#from PyQt4 import QtGui, QtCore
-#from Vitaminator_ui_V5 import MainWindow
+from PyQt4 import QtGui, QtCore
+from Vitaminator_ui_V5 import MainWindow
 import Tkinter
 import tkFileDialog
 import thread
