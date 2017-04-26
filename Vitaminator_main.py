@@ -1,9 +1,12 @@
-from PyQt4 import QtGui, QtCore
-from Vitaminator_ui_V5 import MainWindow
 import Tkinter
 import tkFileDialog
 import thread
 import threading
+import os, sys
+print os.getcwd()
+sys.path.append(os.getcwd() + '\\src')
+from PyQt4 import QtGui, QtCore
+from Vitaminator_ui import MainWindow
 
 def printyes():
     print 'yes man'
@@ -184,14 +187,14 @@ class Window(MainWindow):
         gamma = (2.64*10**14)*math.exp(-11144./(T_C + 273.15))
         delta_t = -math.log(At/A0) / gamma * 30.
         return delta_t
-        
+
 if __name__ == '__main__':
     import sys
     app = QtGui.QApplication(sys.argv)
     window = Window()
     window.show()
     sys.exit(app.exec_())
-    
+
 ######################GUI#################
 #from matplotlibwidget import MatplotlibWidget
 #import nutricialogo_rc
